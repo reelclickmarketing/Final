@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bham Roadside Help</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6XAxFSYzCkeTNakm4m9Oog9xqp0LeeTk&libraries=places"></script>
+</head>
+<body>
+  <header>
+    <h1>Bham Roadside Help</h1>
+    <p class="tagline">Emergency Roadside Help: Tire Change, Jumpstart, Unlock, Towing & More</p>
+    <button onclick="document.getElementById('quote').scrollIntoView({behavior: 'smooth'})">Get a Quote</button>
+  </header>
+
+  <section class="hero">
+    <h2>Reliable Roadside Assistance in Birmingham, AL</h2>
+    <p>We’ll come to you—fast, affordable help when you need it most.</p>
+    <button onclick="document.getElementById('quote').scrollIntoView({behavior: 'smooth'})">Get an Instant Quote</button>
+  </section>
+
+  <main>
+    <section class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>Tire Change</strong>: Flat tire? We'll come to you and get you rolling again.</li>
+        <li><strong>Jumpstart</strong>: Dead battery? Our techs will jump you quickly anywhere in town.</li>
+        <li><strong>Fuel Delivery</strong>: Out of gas? We’ll deliver fuel directly to your vehicle.</li>
+        <li><strong>Car Unlock</strong>: Locked out? We’ll safely unlock your car fast.</li>
+        <li><strong>Towing</strong>: Need a tow? Get a quote based on your pickup/dropoff location.</li>
+      </ul>
+    </section>
+
+    <section id="quote" class="quote-section">
+      <h2>Use the form below to see your personalized quote.</h2>
+      <form id="service-form">
+        <label for="pickup">Pickup Address:</label>
+        <input id="pickup" name="pickup" placeholder="Enter pickup address" required />
+        <button type="button" id="auto-fill">Auto-Fill My Location</button>
+
+        <label for="dropoff" id="dropoff-label" class="hidden">Drop-Off Address (Towing only):</label>
+        <input id="dropoff" name="dropoff" class="hidden" placeholder="Enter drop-off address" />
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Select a service</option>
+          <option value="tire_change">Tire Change</option>
+          <option value="jumpstart">Jumpstart</option>
+          <option value="fuel_delivery">Fuel Delivery</option>
+          <option value="car_unlock">Car Unlock</option>
+          <option value="tow">Towing</option>
+        </select>
+
+        <button type="submit">Calculate Price</button>
+      </form>
+
+      <div id="quote-result" class="hidden"></div>
+      <div id="map"></div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Customer Testimonials</h2>
+      <blockquote>“They showed up in Avondale within 15 minutes and got my flat tire changed fast!” – Kevin R.</blockquote>
+      <blockquote>“Locked my keys in the car in Hoover and they had me back in no time. Very professional!” – Alicia B.</blockquote>
+      <blockquote>“Ran out of gas on Lakeshore Parkway. These guys came through with fuel quickly.” – Marcus J.</blockquote>
+      <blockquote>“Dead battery in Homewood. They were there fast and super friendly!” – Jasmine T.</blockquote>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>📞 Phone: (205) 378-9045</p>
+      <p>📧 Email: help@bhamroadsidehelp.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bham Roadside Help. All rights reserved.</p>
+  </footer>
+
+  <!-- Tawk.to Live Chat Script -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk

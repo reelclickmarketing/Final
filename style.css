@@ -1,0 +1,129 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafc;
+  color: #1f1f2e;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(90deg, #001f3f, #003366);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header .tagline {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  box-shadow: inset 0 0 0 1000px rgba(0, 31, 63, 0.6);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+button {
+  background-color: #ff851b;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff6300;
+}
+
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.quote-section,
+.services,
+.contact,
+.testimonials {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 1rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+}
+
+#map {
+  width: 100%;
+  height: 250px;
+  margin-top: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+#quote-result {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #e8f4fc;
+  border-left: 5px solid #0074d9;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  background: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  border-top: 3px solid #ff851b;
+}
